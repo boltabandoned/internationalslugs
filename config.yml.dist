@@ -1,0 +1,13 @@
+lowercase: false
+
+rulesets:
+    - default
+    - esperanto
+
+rules:
+    ö: o
+    ä: a
+    å: a
+    Ö: O
+    Ä: A
+    Å: A

@@ -1,0 +1,27 @@
+{
+	"name" : "boltabandoned/internationalslugs",
+	"description" : "",
+	"type" : "bolt-extension",
+	"keywords" : [
+		"intendit",
+        "backend"
+	],
+	"require" : {
+		"bolt/bolt" : ">=2.2.10,<3.0.0",
+		"php" : ">=5.3"
+	},
+	"license" : "GPL",
+	"authors" : [{
+			"name" : "Alan Smithee",
+			"email" : "alan.smithee@example.com"
+		}
+	],
+	"autoload" : {
+		"files" : [
+			"init.php"
+		],
+		"psr-4" : {
+			"Bolt\\Extension\\boltabandoned\\internationalslugs\\": ""
+		}
+	}
+}
