@@ -13,19 +13,19 @@ class Extension extends \Bolt\BaseExtension
 
     function initialize()
     {
-        
-        if (isset($this->config['rulesets'])) {
-            $config = [
-                'rulesets' => $this->config['rulesets'],
-                'lowercase' => $this->config['lowercase']
-            ];
-        } else {
-            $config = [
-                'rulesets' => ['default'],
-                'lowercase' => $this->config['lowercase']
-            ];
+
+        if (!isset($this->config['regexp'])) {
+            $this->config['regexp'] = '/([^A-Za-z0-9]|-)+/';
         }
-        $slugify = new Slugify($this->config['regex'], $config);
+
+        if (!isset($this->config['lowercase'])) {
+            $this->config['lowercase'] = true;
+        }
+
+        $slugify = new Slugify(
+            $this->config['regexp'],
+            ['lowercase' => $this->config['lowercase']]
+        );
 
         foreach($this->config['rules'] as $key => $value){
             $slugify->addRule($key, $value);

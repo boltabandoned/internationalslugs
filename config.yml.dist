@@ -1,13 +1,20 @@
+# These are mostly example settings, that allow swedish uppercase slugs.
+# Change them to fit your needs.
+
+# Allow or disallow uppercase characters in the slug
 lowercase: false
 
-rulesets:
-    - default
-    - esperanto
+# The regex decides what should be allowed in the slug. Any replacements you
+# want to do in the rules below should also be allowed here.
+regexp: '/([^A-Za-z0-9åäöÅÄÖ]|-)+/'
 
+# Specific replacements to do in the slug. These are overrides for the default
+# replacements, so if you want to allow any disallowed character you need to
+# replace it with itself here.
 rules:
-    ö: o
-    ä: a
-    å: a
-    Ö: O
-    Ä: A
-    Å: A
+    ö: ö
+    ä: ä
+    å: å
+    Ö: Ö
+    Ä: Ä
+    Å: Å
