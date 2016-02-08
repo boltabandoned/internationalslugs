@@ -1,26 +1,27 @@
 {
-	"name" : "boltabandoned/internationalslugs",
-	"description" : "",
-	"type" : "bolt-extension",
-	"keywords" : [
+	"name": "boltabandoned/internationalslugs",
+	"description": "",
+	"type": "bolt-extension",
+	"keywords": [
 		"intendit",
-        "backend"
+		"backend"
 	],
-	"require" : {
-		"bolt/bolt" : ">=2.2.10,<3.0.0",
-		"php" : ">=5.3"
+	"require": {
+		"bolt/bolt": ">=2.2.0,<3.0.0",
+		"php": ">=5.4"
 	},
-	"license" : "GPL",
-	"authors" : [{
-			"name" : "Alan Smithee",
-			"email" : "alan.smithee@example.com"
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Alan Smithee",
+			"email": "alan.smithee@example.com"
 		}
 	],
-	"autoload" : {
-		"files" : [
+	"autoload": {
+		"files": [
 			"init.php"
 		],
-		"psr-4" : {
+		"psr-4": {
 			"Bolt\\Extension\\boltabandoned\\internationalslugs\\": ""
 		}
 	}
