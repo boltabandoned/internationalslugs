@@ -18,3 +18,25 @@ rules:
     Ö: Ö
     Ä: Ä
     Å: Å
+
+# Spanish rules, comment the above and uncomment the below rules to use:
+
+#rules:
+#    ö: ö
+#    ä: ä
+#    å: å
+#    Ö: Ö
+#    Ä: Ä
+#    Å: Å
+#    Á: Á
+#    É: É
+#    í: í
+#    Ó: Ó
+#    Ú: Ú
+#    Ñ: Ñ
+#    á: á
+#    é: é
+#    í: í
+#    ó: ó
+#    ú: ú
+#    ñ: ñ
