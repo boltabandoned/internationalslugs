@@ -24,7 +24,7 @@ class Extension extends \Bolt\BaseExtension
 
         $slugify = new Slugify(
             $this->config['regexp'],
-            ['lowercase' => $this->config['lowercase']]
+            array('lowercase' => $this->config['lowercase'])
         );
 
         foreach($this->config['rules'] as $key => $value){
