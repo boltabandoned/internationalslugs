@@ -19,6 +19,10 @@ rules:
     Ä: Ä
     Å: Å
 
+# regexp for spanish rules:
+
+# regexp: '/([^A-Za-z0-9åäöÅÄÖáéíóúñÁÉÍÓÚÑ]|-)+/'
+
 # Spanish rules, comment the above and uncomment the below rules to use:
 
 #rules:
