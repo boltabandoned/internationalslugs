@@ -1,28 +1,28 @@
 {
-	"name": "boltabandoned/internationalslugs",
-	"description": "",
-	"type": "bolt-extension",
-	"keywords": [
-		"intendit",
-		"backend"
-	],
-	"require": {
-		"bolt/bolt": ">=2.2.0,<3.0.0",
-		"php": ">=5.3"
-	},
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Alan Smithee",
-			"email": "alan.smithee@example.com"
-		}
-	],
-	"autoload": {
-		"files": [
-			"init.php"
-		],
-		"psr-4": {
-			"Bolt\\Extension\\boltabandoned\\internationalslugs\\": ""
-		}
-	}
+    "name": "boltabandoned/internationalslugs",
+    "description": "This extension allows for custom slug rules.",
+    "type": "bolt-extension",
+    "keywords": [
+    ],
+    "require": {
+        "bolt/bolt": "^3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alan Smithee",
+            "email": "alan.smithee@example.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Extension\\boltabandoned\\InternationalSlugs\\": "src"
+        }
+    },
+    "extra": {
+        "bolt-assets": "web",
+        "bolt-class": "Bolt\\Extension\\boltabandoned\\InternationalSlugs\\InternationalSlugsExtension"
+    }
 }
