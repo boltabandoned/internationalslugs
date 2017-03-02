@@ -4,7 +4,7 @@ namespace Bolt\Extension\boltabandoned\InternationalSlugs;
 
 use Bolt\Extension\SimpleExtension;
 use Cocur\Slugify\Slugify;
-use Bolt\Application;
+use Silex\Application;
 
 /**
  * InternationalSlugs extension class.
