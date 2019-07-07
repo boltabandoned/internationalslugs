@@ -29,10 +29,10 @@ class InternationalSlugsExtension extends SimpleExtension
                     $config['lowercase'] = true;
                 }
 
-                $slugify = new Slugify(
-                    $config['regexp'],
-                    array('lowercase' => $config['lowercase'])
-                );
+                $slugify = new Slugify([
+                    'regexp' => $config['regexp'],
+                    'lowercase' => $config['lowercase'],
+                ]);
 
                 foreach($config['rules'] as $key => $value){
                     $slugify->addRule($key, $value);
